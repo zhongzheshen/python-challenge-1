@@ -1,0 +1,56 @@
+
+# 1. Empty list
+[
+    {
+        "Item name": "string",
+        "Price": float,
+        "Quantity": int
+    },
+    {
+        "Item name": "string",
+        "Price": float,
+        "Quantity": int
+
+    },
+]
+
+# 2. print sub_menu
+# prompt customer to enter selection from menu. save it as variable
+menu_selection
+
+# 3. use input, check if customer input is a number. if not, print error; 
+# if yes, convert it into int and check if it is keys of menu_items: 
+
+# 4. if not, print error Otherwise
+
+# 4a. get item name from menu_items dic and store as variable
+# 4b. ask cutomer for quantity using item name variable. Let them know quantity default to 1 if input invalid
+# Save their answer as variable called quantity
+
+# 4c. Check if customer input is number: if not, quantity = 1. if yes, convert it to int
+
+# 4d. Append customer's order to the order list in dict format with "item name" "Price", "Quantity" as keys.
+
+#5. In while loop prompting keep ordering, match:case to check y or n (upper or lower case) and incl
+# default optionif nothing input. Perform follwing as each case:
+
+# 5a. y: set place_order variable to True and break
+# 5b. n: set place_order to False + rpint "Thank you for your oder", and break
+# 5c. Default: Tell customer to try again due to typed invalid input
+
+
+# Order Receipt
+# 6. Create for loop
+# 7. In loop, save value of each key as their own variable: item_name, price, quantity
+# 8. Calculate the number of empty spaces that should be added to the display so that the receipt uses following format:
+
+# Item name        | Price  |  Quantity
+-------------------|--------|-----------
+Apple              | $0.49  |  1
+Tea - Thai iced    | $3.99  |  2
+Fried banana       | $4.49  |  3
+
+# 9. Create the space strings as their own variables using spring multiplication
+# 10. Print line for receipt as step 8
+# 11. Upon exiting for loop, use list comprehension and sum() to calculate total price of order and 
+# display. make sure multiply price by quantity in list comprehension.
