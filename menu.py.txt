@@ -1,46 +1,428 @@
 
-# 1. Empty list
-[
-    {
-        "Item name": "string",
-        "Price": float,
-        "Quantity": int
+# Menu dictionary
+menu = {
+    "Snacks": {
+        "Cookie": .99,
+        "Banana": .69,
+        "Apple": .49,
+        "Granola bar": 1.99
     },
-    {
-        "Item name": "string",
-        "Price": float,
-        "Quantity": int
-
+    "Meals": {
+        "Burrito": 4.49,
+        "Teriyaki Chicken": 9.99,
+        "Sushi": 7.49,
+        "Pad Thai": 6.99,
+        "Pizza": {
+            "Cheese": 8.99,
+            "Pepperoni": 10.99,
+            "Vegetarian": 9.99
+        },
+        "Burger": {
+            "Chicken": 7.49,
+            "Beef": 8.49
+        }
     },
-]
+    "Drinks": {
+        "Soda": {
+            "Small": 1.99,
+            "Medium": 2.49,
+            "Large": 2.99
+        },
+        "Tea": {
+            "Green": 2.49,
+            "Thai iced": 3.99,
+            "Irish breakfast": 2.49
+        },
+        "Coffee": {
+            "Espresso": 2.99,
+            "Flat white": 2.99,
+            "Iced": 3.49
+        }
+    },
+    "Dessert": {
+        "Chocolate lava cake": 10.99,
+        "Cheesecake": {
+            "New York": 4.99,
+            "Strawberry": 6.49
+        },
+        "Australian Pavlova": 9.99,
+        "Rice pudding": 4.99,
+        "Fried banana": 4.49
+    }
+}
 
+# 1. Set up order list. Order list will store a list of dictionaries for 
+# menu item name, item price, and quantity ordered
+i = menu.key
+j = {i}.key2
+k = {i}.{j}.key3
+menu_item = {i}{j}{k}
+item_quantity = input("How many do you want? ")
+order_list = {
+            menu[i][j][k],
+            item_quantity
+    }
+# Customers may want to order multiple items, so let's create a continuous
+# loop
+print("Welcome!")
 # 2. print sub_menu
+sub_menu = menu["Snacks", "Meals", "Drinks", "Desert"]
+
+sub_menu.snack = menu[0][key2][key3]
+sub_menu.meal = menu[1][key2][key3]
+sub_menu.drink = menu[2][key2][key3]
+sub_menu.dessert = menu[3][key2][key3]
+
+print(sub_menu)
 # prompt customer to enter selection from menu. save it as variable
-menu_selection
-
-# 3. use input, check if customer input is a number. if not, print error; 
+menu_selection[i][j][k] = input("What do you want to order,{i}{j}{k}? ")
+# 3. use input, check if customer input is a number. if not, print error;
+    If Item_name.isdigit = False:
+        print("Error")    
 # if yes, convert it into int and check if it is keys of menu_items: 
-
+    else:
+        if Item_name = menu_items.keys
+            Item_name = int(Item_name)
+            print("You selected {menu_item}."
 # 4. if not, print error Otherwise
-
-# 4a. get item name from menu_items dic and store as variable
+        else: 
+            print("Error")
+# 4a. get item name from menu_items dict and store as variable
+# see above #1 menu_item = {i}{j}{k}
+for i in menu.keys():
+    for i = 0
+        print(f"{i}:{key}")
+        For menu_{j} in menu[i]
+            For j = 0
+                print("You are now ordering {j}.")
+                print("What would like to order?  ")
 # 4b. ask cutomer for quantity using item name variable. Let them know quantity default to 1 if input invalid
 # Save their answer as variable called quantity
-
+                item_quantity = input("How many do you want, (1) or other amount? ")
+{i}{j}{k} = item_name
+    for {i}.{j}.{k}.quantity in menu.item_name.quantity
+                {i}.{j}.{null}_quantity = 1
+                {i}.{j}.{null}_quantity = input("How many do you like (1)? ")
+# 3. use input, check if customer input is a number. if not, print error;
+                     If Item_name.isdigit = False:
+                        print("Error")    
+                     else:
+                        if Item_name = menu_items.keys
+                        Item_name = int(Item_name)
+                        print("You selected {menu_item}."
+# 4. if not, print error Otherwise
+                        else: 
+                            print("Error")
 # 4c. Check if customer input is number: if not, quantity = 1. if yes, convert it to int
+                if {i}.{j}.{k}.menu.item_quanty isdigit)
+                    {i}.{j}.{k}.menu.item_quanty = int({i}.{j}.{k}.menu.item_quanty
+                else:
+                    print(:Error")
+                {i}.{j}.{null}_item.value.quantity = input("You picked {j} at {value[j] for {i}.{j}.{null}_quantity. Thank you!")
 
 # 4d. Append customer's order to the order list in dict format with "item name" "Price", "Quantity" as keys.
+#5. In while loop prompting keep ordering, match:case to check y or n (upper or lower case) and incl
+# default optionif nothing input. Perform follwing as each case:
+                print("Would you like something more, (Y)es or (N)o? ")
+                    While True:
+                        input = input.lower()
+                    if input = null
+                        input = n
+            if j = 1
+                print("You are now ordering {j}.")
+                print("What would you like to order? ")
+                {i}.{j}.{null}_quantity = input("How many do you like," + "(1) or" + "? ") 
+# 3. use input, check if customer input is a number. if not, print error;
+                     If Item_name.isdigit = False:
+                        print("Error")    
+                     else:
+                        if Item_name = menu_items.keys
+                        Item_name = int(Item_name)
+                        print("You selected {menu_item}."
+# 4. if not, print error Otherwise
+                        else: 
+                            print("Error")
+# 4c. Check if customer input is number: if not, quantity = 1. if yes, convert it to int
+                if {i}.{j}.{k}.menu.item_quanty isdigit)
+                    {i}.{j}.{k}.menu.item_quanty = int({i}.{j}.{k}.menu.item_quanty
+                else:
+                    print(:Error")
+                {i}.{j}.{null}_item.value.quantity = input("You picked {j} at {value[j] for {i}.{j}.{k}_quantity. Thank you!") 
+#5. In while loop prompting keep ordering, match:case to check y or n (upper or lower case) and incl
+# default optionif nothing input. Perform follwing as each case:
+                print("Would you like something more, (Y)es or (N)o? ")
+                    While True:
+                        input = input.lower()
+                            if input = null
+                                input = n
+                j += 1
+            else:
+                while j > 3
+                    break
+ 
+        for i = 1
+                print(f"{i}:{key}")
+                if j = 0
+                    print("You are now ordering {j}.")
+                    print("What would you like to order? ")
+# 3. use input, check if customer input is a number. if not, print error;
+                     If Item_name.isdigit = False:
+                        print("Error")    
+                     else:
+                        if Item_name = menu_items.keys
+                        Item_name = int(Item_name)
+                        print("You selected {menu_item}."
+# 4. if not, print error Otherwise
+                        else: 
+                            print("Error")
+# 4c. Check if customer input is number: if not, quantity = 1. if yes, convert it to int
+                if {i}.{j}.{k}.menu.item_quanty isdigit)
+                    {i}.{j}.{k}.menu.item_quanty = int({i}.{j}.{k}.menu.item_quanty
+                else:
+                    print(:Error")
+                        {i}.{j}.{null}_quantity = input("How many do you like," + "(1) or" + "? ")
+
+
+                    j += 1 
+                elif j > 3 and j = 4
+                        print("You are now ordering {j}.")
+                        print("What would you like to order? ")
+                            if k = 0
+                            {i}.{j}.{k}_quantity = input("How many do you like," + "(1) or" + "? ") 
+# 3. use input, check if customer input is a number. if not, print error;
+                     If Item_name.isdigit = False:
+                        print("Error")    
+                     else:
+                        if Item_name = menu_items.keys
+                        Item_name = int(Item_name)
+                        print("You selected {menu_item}."
+# 4. if not, print error Otherwise
+                        else: 
+                            print("Error")
+# 4c. Check if customer input is number: if not, quantity = 1. if yes, convert it to int
+                if {i}.{j}.{k}.menu.item_quanty isdigit)
+                    {i}.{j}.{k}.menu.item_quanty = int({i}.{j}.{k}.menu.item_quanty
+                else:
+                    print(:Error")
+                            {i}.{j}.{null}_item.value.quantity = input("You picked {j} at {value[j] for {i}.{j}. k}_quantity. Thank you!")
+#5. In while loop prompting keep ordering, match:case to check y or n (upper or lower case) and incl
+# default optionif nothing input. Perform follwing as each case:
+                    print("Would you like something more, (Y)es or (N)o? ")
+                    While True:
+                        input = input.lower()
+                            if input = null
+                                input = n
+                            k += 1
+                            while k > 3
+                                break
+                elif j > 3 and j = 5
+                    else: 
+                         print("You are now ordering {j}.")
+                         print("What would you like to order? ")   
+                        {i}.{j}.{null}_quantity = input("How many do you like," + "(1) or" + "? ") 
+# 3. use input, check if customer input is a number. if not, print error;
+                     If Item_name.isdigit = False:
+                        print("Error")    
+                     else:
+                        if Item_name = menu_items.keys
+                        Item_name = int(Item_name)
+                        print("You selected {menu_item}."
+# 4. if not, print error Otherwise
+                        else: 
+                            print("Error")
+# 4c. Check if customer input is number: if not, quantity = 1. if yes, convert it to int
+                if {i}.{j}.{k}.menu.item_quanty isdigit)
+                    {i}.{j}.{k}.menu.item_quanty = int({i}.{j}.{k}.menu.item_quanty
+                else:
+                    print(:Error")
+                            if k = 0
+                               {i}.{j}.{null}_quantity = input("How many do you like," + "(1) or" + "? ") 
+# 3. use input, check if customer input is a number. if not, print error;
+                     If Item_name.isdigit = False:
+                        print("Error")    
+                     else:
+                        if Item_name = menu_items.keys
+                        Item_name = int(Item_name)
+                        print("You selected {menu_item}."
+# 4. if not, print error Otherwise
+                        else: 
+                            print("Error")
+# 4c. Check if customer input is number: if not, quantity = 1. if yes, convert it to int
+                if {i}.{j}.{k}.menu.item_quanty isdigit)
+                    {i}.{j}.{k}.menu.item_quanty = int({i}.{j}.{k}.menu.item_quanty
+                else:
+                    print(:Error")
+                                {i}.{j}.{null}_item.value.quantity = input("You picked {j} at {value[j] for {i}.{j}.{null}_quantity. Thank you!")
+#5. In while loop prompting keep ordering, match:case to check y or n (upper or lower case) and incl
+# default optionif nothing input. Perform follwing as each case:
+                print("Would you like something more, (Y)es or (N)o? ")
+                    While True:
+                        input = input.lower()
+                            if input = null
+                                input = n
+                            k += 1
+                            while k > 2
+                                break                             
+                else:
+                    while j > 5
+                        break
+
+        for i = 2
+
+            print(f"{i}:{key}")
+                if j = 0
+                    print("You are now ordering {j}.")
+                    print("What would you like to order? ")
+                    {i}.{j}.{null}_quantity = input("How many do you like," + "(1) or" + "? ") 
+# 3. use input, check if customer input is a number. if not, print error;
+                     If Item_name.isdigit = False:
+                        print("Error")    
+                     else:
+                        if Item_name = menu_items.keys
+                        Item_name = int(Item_name)
+                        print("You selected {menu_item}."
+# 4. if not, print error Otherwise
+                        else: 
+                            print("Error")
+# 4c. Check if customer input is number: if not, quantity = 1. if yes, convert it to int
+                if {i}.{j}.{k}.menu.item_quanty isdigit)
+                    {i}.{j}.{k}.menu.item_quanty = int({i}.{j}.{k}.menu.item_quanty
+                else:
+                    print(:Error")
+                        if k = 0
+                            {i}.{j}.{null}_quantity = input("How many do you like," + "(1) or" + "? ") 
+# 3. use input, check if customer input is a number. if not, print error;
+                     If Item_name.isdigit = False:
+                        print("Error")    
+                     else:
+                        if Item_name = menu_items.keys
+                        Item_name = int(Item_name)
+                        print("You selected {menu_item}."
+# 4. if not, print error Otherwise
+                        else: 
+                            print("Error")
+# 4c. Check if customer input is number: if not, quantity = 1. if yes, convert it to int
+                if {i}.{j}.{k}.menu.item_quanty isdigit)
+                    {i}.{j}.{k}.menu.item_quanty = int({i}.{j}.{k}.menu.item_quanty
+                else:
+                    print(:Error")
+                            {i}.{j}.{null}_item.value.quantity = input("You picked {j} at {value[j] for {i}.{j}.{null}_quantity. Thank you!")
+#5. In while loop prompting keep ordering, match:case to check y or n (upper or lower case) and incl
+# default optionif nothing input. Perform follwing as each case:
+                print("Would you like something more, (Y)es or (N)o? ")
+                    While True:
+                        input = input.lower()
+                            if input = null
+                                input = n
+                            k += 1
+                        else:
+                            while k > 2
+                                break       
+                    j += 1     
+                else:
+                    while j > 2
+                        break
+
+        for i = 3
+
+            print(f"{i}:{key}")
+                j = 0
+                    if j = 1
+                        print("You are now ordering {j}.")
+                        print("What would you like to order? ")
+                        {i}.{j}.{k}_quantity = input("How many do you like," + "(1) or" + "? ")
+# 3. use input, check if customer input is a number. if not, print error;
+                     If Item_name.isdigit = False:
+                        print("Error")    
+                     else:
+                        if Item_name = menu_items.keys
+                        Item_name = int(Item_name)
+                        print("You selected {menu_item}."
+# 4. if not, print error Otherwise
+                        else: 
+                            print("Error")
+# 4c. Check if customer input is number: if not, quantity = 1. if yes, convert it to int
+                if {i}.{j}.{k}.menu.item_quanty isdigit)
+                    {i}.{j}.{k}.menu.item_quanty = int({i}.{j}.{k}.menu.item_quanty
+                else:
+                    print(:Error")
+                        if k = 0
+                            {i}_{j}.{k}_item = input("You picked {k}: {value[k]}. Thank you!")
+                            k += 1
+                            while k > 1
+                                break
+                        j += 1
+                    else: # j != 1
+                        print("You are now ordering {j}.")
+                        print("What would you like to order? ")
+                        {i}.{j}.{null}_quantity = input("How many do you like," + "(1) or" + "? ") 
+# 3. use input, check if customer input is a number. if not, print error;
+                     If Item_name.isdigit = False:
+                        print("Error")    
+                     else:
+                        if Item_name = menu_items.keys
+                        Item_name = int(Item_name)
+                        print("You selected {menu_item}."
+# 4. if not, print error Otherwise
+                        else: 
+                            print("Error")
+# 4c. Check if customer input is number: if not, quantity = 1. if yes, convert it to int
+                if {i}.{j}.{k}.menu.item_quanty isdigit)
+                    {i}.{j}.{k}.menu.item_quanty = int({i}.{j}.{k}.menu.item_quanty
+                else:
+                    print(:Error")
+                        {i}.{j}.{null}_item.value.quantity = input("You picked {j} at {value[j] for {i}.{j}.{kl}_quantity. Thank you!")
+#5. In while loop prompting keep ordering, match:case to check y or n (upper or lower case) and incl
+# default optionif nothing input. Perform follwing as each case:
+                print("Would you like something more, (Y)es or (N)o? ")
+                    While True:
+                    input = input.lower()
+                        if input = null
+                            input = n
+                        j += 1
+                  else:
+                    while j > 4
+                         break                             
+
+# 5a. y: set place_order variable to True and break
+if place_order = True 
+    break
+# 5b. n: set place_order to False + print "Thank you for your oder", and break
+elif place_order = false
+# 5c. Default: Tell customer to try again due to typed invalid input
+print{"You typed invalid input. Please try again. ")
+if place_order = True 
+    break
+print("Thank you for your oder")
+
+
+
+
+
 
 #5. In while loop prompting keep ordering, match:case to check y or n (upper or lower case) and incl
 # default optionif nothing input. Perform follwing as each case:
-
+print("Would you like something more, (Y)es or (N)o? ")
+While True:
+input = input.lower()
+if input = null
+    input = n
 # 5a. y: set place_order variable to True and break
+elif place_order = True
+    break
 # 5b. n: set place_order to False + rpint "Thank you for your oder", and break
+else 
 # 5c. Default: Tell customer to try again due to typed invalid input
 
 
 # Order Receipt
 # 6. Create for loop
+for i in range(4)
+    if j != n 
+        sum_if k
+                
+    sum(k) = 
+{i}.{j}.{k}_price_quantity
 # 7. In loop, save value of each key as their own variable: item_name, price, quantity
 # 8. Calculate the number of empty spaces that should be added to the display so that the receipt uses following format:
 
@@ -50,7 +432,36 @@ Apple              | $0.49  |  1
 Tea - Thai iced    | $3.99  |  2
 Fried banana       | $4.49  |  3
 
+print("  Item name        | Price  |  Quantity ")
+print("-------------------|--------|-----------")
+print("Apple              | $0.49  |  1        ")
+print("Tea - Thai iced    | $3.99  |  2        ")
+print("Fried banana       | $4.49  |  3        ")
+
 # 9. Create the space strings as their own variables using spring multiplication
+space_strings = spring * 
 # 10. Print line for receipt as step 8
+print("-" * 40)
 # 11. Upon exiting for loop, use list comprehension and sum() to calculate total price of order and 
 # display. make sure multiply price by quantity in list comprehension.
+
+order_list.comprehension
+i=0
+sum = order_list[i][j][k] * item_quantity[i][j][k]
+for k in range(3), j in range (5), i in range(4)
+total_payment = sum({i.}.{j}.{k}.price[i, j, k] * num.item[i, j, k])
+for num_item[i, j, k]:
+print("You have ordered {num_item[i,j,k} {i}.{j}.{k}")
+print("The total payment is ${sum}")
+
+
+
+
+
+
+
+
+
+
+
+
